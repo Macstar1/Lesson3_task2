@@ -4,6 +4,12 @@ fun main() {
     val monthTransferSum = 0
     val transfer = 75_500
 
+    printResult(cardType, monthTransferSum, dayTransferSum, transfer)
+
+}
+
+fun printResult(cardType: String, monthTransferSum: Int, dayTransferSum: Int, transfer: Int){
+
     if ((monthTransferSum + transfer <= MAX_MONTH_TRANSFER) &&
         (dayTransferSum + transfer <= MAX_DAY_TRANSFER)
     )
